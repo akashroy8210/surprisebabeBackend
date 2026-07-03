@@ -14,7 +14,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "bubu123";
 
 const uploadsDir = path.join(__dirname, "uploads");
@@ -61,6 +61,7 @@ app.post("/api/admin/upload-voice", (req, res) => {
 
 // Admin Login endpoint using Option 2 (ANKA API delegation)
 app.post("/api/admin/login", async (req, res) => {
+  console.log("Admin login request received:", req.body);
   const { id, pass, password } = req.body;
   
   // Backwards compatibility for older password-only admin client
@@ -68,19 +69,20 @@ app.post("/api/admin/login", async (req, res) => {
   const loginPass = pass || password;
 
   const ANKA_AUTH_URL = process.env.ANKA_AUTH_URL;
-
+  console.log(`Admin login attempt: ID=${loginId}, ANKA_AUTH_URL=${ANKA_AUTH_URL ? "set" : "not set"}`);
   if (ANKA_AUTH_URL) {
+    console.log(`Delegating admin authentication to ANKA API at ${ANKA_AUTH_URL}`);
     try {
       const response = await fetch(ANKA_AUTH_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ id: loginId, pass: loginPass })
+        body: JSON.stringify({ instanceId: loginId, password: loginPass })
       });
       const data = await response.json();
       if (response.status === 200 && (data.success || data.token || data.authenticated)) {
         return res.status(200).json({ success: true, token: data.token || "admin-secret-token-bubu" });
       }
-      return res.status(401).json({ success: false, error: data.error || "Incorrect ID or password, baby 😔" });
+      return res.status(401).json({ success: false, error: data.message || data.error || "Incorrect ID or password, baby 😔" });
     } catch (err) {
       console.error("Anka auth failed:", err);
       return res.status(500).json({ success: false, error: "Authentication server is unreachable 😔" });
