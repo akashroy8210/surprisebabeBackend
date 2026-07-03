@@ -1,0 +1,161 @@
+{
+  "welcome": {
+    "title": "Hey My Love ❤️",
+    "subtitle": "I Love you cutie Pie.",
+    "line1": "You smile is killing me cutie",
+    "line2": "You share everything to me ",
+    "line3": "You don't even have to talk.",
+    "prompt": "Just stay here with me for a little while.",
+    "buttonText": "Enter Our Little World"
+  },
+  "timeline": [
+    {
+      "id": 1,
+      "date": "The Day We Met",
+      "title": "First Photo Together",
+      "description": "This was the very first photo we took together. Honestly, I was blank at that time when we were together for the first time. I was nervous and shy but you were so comfortable. we kissed for the first time",
+      "image": "/src/assets/firstMeet.jpeg"
+    },
+    {
+      "id": 2,
+      "date": "Winter 2025",
+      "title": "We will Survive Like this together",
+      "description": "Your Hand on my hand feel like the safest place in the world.",
+      "image": "/src/assets/together.jpeg"
+    },
+    {
+      "id": 3,
+      "date": "winter 2025",
+      "title": "The 2nd time Temple Visit",
+      "description": "This was the second time we went to the temple together.And again praying to god to keep you safe and happy forever.I still remember how you teached me to do puja",
+      "image": "/src/assets/memory.jpeg"
+    },
+    {
+      "id": 4,
+      "date": "OCT 2025",
+      "title": "First Time we were in the same video",
+      "description": "Bubu, I was telling you that time show this video to your Mummy and you were i will show obviously i will show",
+      "image": "/src/assets/lovableMoment.mp4"
+    },
+    {
+      "id": 5,
+      "date": "Breakfast Date",
+      "title": "This is my Most Favourite Moment with ",
+      "description": "This video is so special for me and i cant forget this moment i will always remember how you feed me with your hand and how you were so happy to see me eating  I love you meri biwi pie♥️",
+      "image": "/src/assets/special_memory.mp4"
+    }
+  ],
+  "thingsILove": [
+    {
+      "id": 1,
+      "title": "Your smile",
+      "desc": "Not gonna lie, it still completely resets my day, no matter how bad things are.",
+      "color": "from-pink-400 to-rose-450"
+    },
+    {
+      "id": 2,
+      "title": "Your Love",
+      "desc": "Your face expression cutie i love so much when i show you sleeping in angry and then you call me .",
+      "color": "from-rose-450 to-pink-500"
+    },
+    {
+      "id": 3,
+      "title": "Your determination",
+      "desc": "The quiet strength you show when dealing with things that overwhelm you. I admire you so much.",
+      "color": "from-slate-400 to-slate-500"
+    },
+    {
+      "id": 4,
+      "title": "Your intelligence",
+      "desc": "The way your mind works when you're explaining something you're passionate about.",
+      "color": "from-pink-500 to-rose-450"
+    },
+    {
+      "id": 5,
+      "title": "The way you care",
+      "desc": "You love so deeply and selflessly; your heart is secrets-down my favourite place.",
+      "color": "from-rose-450 to-pink-300"
+    },
+    {
+      "id": 6,
+      "title": "Your laugh",
+      "desc": "My favorite sound ever. Still makes me smile instantly without me realizing it.",
+      "color": "from-slate-500 to-slate-650"
+    },
+    {
+      "id": 7,
+      "title": "Your strength",
+      "desc": "Even on the heavy days, you keep holding on. Sona, you are so much tougher than you think.",
+      "color": "from-pink-400 to-rose-450"
+    },
+    {
+      "id": 8,
+      "title": "Your honesty",
+      "desc": "Your genuine nature and the pure sincerity in everything you do.",
+      "color": "from-rose-450 to-pink-400"
+    },
+    {
+      "id": 9,
+      "title": "Your creativity",
+      "desc": "The unique, artistic lens through which you see the beauty in normal things.",
+      "color": "from-slate-650 to-slate-750"
+    },
+    {
+      "id": 10,
+      "title": "Your patience",
+      "desc": "How calm and understanding you are, especially when I'm being a complete idiot.",
+      "color": "from-pink-500 to-rose-450"
+    },
+    {
+      "id": 11,
+      "title": "Your style",
+      "desc": "How you hold yourself with quiet grace. You look perfect even in baggy hoodies.",
+      "color": "from-rose-450 to-pink-300"
+    },
+    {
+      "id": 12,
+      "title": "Your existence",
+      "desc": "Just by being here, you make this world an infinitely more beautiful place for me.",
+      "color": "from-slate-500 to-rose-450"
+    }
+  ],
+  "moodGarden": {
+    "tired": {
+      "emoji": "😔",
+      "label": "Tired",
+      "title": "You've carried so much today. You deserve rest.",
+      "message": "Hey baby, it is okay to put down the weight of the world. You do not need to be strong right now. Close your eyes, breathe slowly, and let go. You have done enough today, my love. I am right here holding space for you."
+    },
+    "stressed": {
+      "emoji": "😣",
+      "label": "Stressed",
+      "title": "You don't have to solve everything tonight.",
+      "message": "Take a deep breath, sona. Exhale the worries of tomorrow. The future will wait. Let's focus only on this exact second. You are safe here. There are no deadlines, no expectations, and no pressure. Just peace."
+    },
+    "frustrated": {
+      "emoji": "😡",
+      "label": "Frustrated",
+      "title": "It's okay to feel upset. Your feelings matter.",
+      "message": "Bubu, you are allowed to feel angry, hurt, or annoyed. I won't tell you to calm down or look on the bright side. Your feelings are completely valid. Let it out, or sit with it in silence. I am here to listen whenever you're ready."
+    },
+    "empty": {
+      "emoji": "🌫️",
+      "label": "Empty",
+      "title": "You don't have to force yourself to feel better right now.",
+      "message": "Biwipie, some days feel like a blank slate, gray and numb. You don't have to search for joy or try to paint it with color today. It's okay to just 'be'. I will sit with you in the quietness until the warmth returns naturally."
+    }
+  },
+  "voiceNote": {
+    "intro": "Bubu, I know today wasn't the easiest day, so I thought I'd stay here with you for a bit. Put on your headphones, close your eyes, and play this."
+  },
+  "finalScreen": {
+    "title": "Biwipie,",
+    "letter": [
+      "I know today wasn't the best day.",
+      "Honestly, I didn't make this because I wanted to fix anything.",
+      "I just wanted to spend some time with you. That's all.",
+      "And if you smiled even once while looking through this, then I'm happy."
+    ],
+    "signoff": "— Your idiot ❤️"
+  }
+}
